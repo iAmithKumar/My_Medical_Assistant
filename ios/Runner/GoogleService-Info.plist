@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>526532334314-sghvil37kbbomdf6f7u2jjr66nvf405d.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.526532334314-sghvil37kbbomdf6f7u2jjr66nvf405d</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBv0ae4vCzAW71-dpByS1dUL0Uqy0RqD0k</string>
+	<key>GCM_SENDER_ID</key>
+	<string>526532334314</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.amithk.mymedicalassistant</string>
+	<key>PROJECT_ID</key>
+	<string>my-medical-assistant</string>
+	<key>STORAGE_BUCKET</key>
+	<string>my-medical-assistant.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:526532334314:ios:62335d7bd9498923af3d93</string>
+	<key>DATABASE_URL</key>
+	<string>https://my-medical-assistant.firebaseio.com</string>
+</dict>
+</plist>
