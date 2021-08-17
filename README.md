@@ -1,4 +1,4 @@
-# MY Medical Assistant
+# MY MEDICAL ASSISTANT
 
 A Flutter application developed with an idea to help the users with their day to day medical needs through a mobile app.
 
