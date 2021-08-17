@@ -4,8 +4,8 @@ A mobile application developed with an idea to help the users with their day to 
 It is a cross platform mobile application built using Flutter SDK.
 
 # Application
-Useful in storing the medical prescriptions given by doctors for future use(mainly for aged people).
-Maintaining day to day health information of the user.
+-> Useful in storing the medical prescriptions given by doctors for future use(mainly for aged people).  
+-> Maintaining day to day health information of the user.
 
 # Features
 
