@@ -1,6 +1,7 @@
 # MY MEDICAL ASSISTANT
 
-A Flutter application developed with an idea to help the users with their day to day medical needs through a mobile app.
+A mobile application developed with an idea to help the users with their day to day medical needs through a mobile app.
+It is a cross platform mobile application built using Flutter SDK.
 
 # Application
 Useful in storing the medical prescriptions given by doctors for future use(mainly for aged people).
