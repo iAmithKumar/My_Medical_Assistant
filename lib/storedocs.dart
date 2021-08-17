@@ -3,13 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'dart:io';
 
-void main() {
-  runApp(MaterialApp(
-    title: "Attach docs",
-    home: SingleImageUpload(),
-  ));
-}
-
 class SingleImageUpload extends StatefulWidget {
   static const id = 'storedocuments';
 
@@ -20,7 +13,7 @@ class SingleImageUpload extends StatefulWidget {
 }
 
 class _SingleImageUploadState extends State<SingleImageUpload> {
-  List<Object> images = List<Object>();
+  List<Object> images = [];
   Future<File> _imageFile;
 
   @override

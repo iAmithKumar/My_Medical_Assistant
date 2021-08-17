@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:insparkproject/Login.dart';
+import 'Login.dart';
 import 'homepage.dart';
 import 'register.dart';
 import 'homescreen.dart';
 import 'storedocs.dart';
-import 'perinfo.dart';
+import 'personal_info.dart';
 import 'bharat.dart';
 import 'first_aid.dart';
 import 'remainder_page.dart';
@@ -23,7 +23,7 @@ class MedicalReminder extends StatelessWidget {
         RegistrationScreen.id: (context) => RegistrationScreen(),
         HomeScreen.id: (context) => HomeScreen(),
         SingleImageUpload.id: (context) => SingleImageUpload(),
-        PerInfo.id: (context) => PerInfo(),
+        PersonalInfo.id: (context) => PersonalInfo(),
         RemainderPage.id: (context) => RemainderPage(),
         FirstAid.id: (context) => FirstAid(),
         DetailPage.id: (context) => DetailPage(),
@@ -61,7 +61,7 @@ class WelcomeScreen extends StatelessWidget {
         SizedBox(
           height: 40,
         ),
-        FlatButton(
+        TextButton(
           onPressed: () {
             Navigator.pushNamed(context, HomePage.id);
           },

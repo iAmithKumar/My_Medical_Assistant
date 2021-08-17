@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:insparkproject/Login.dart';
+import 'package:mymedicalassistant/Login.dart';
 import 'register.dart';
 
-
 class HomePage extends StatelessWidget {
-
   static const String id = 'homepage';
 
   @override
@@ -25,7 +23,7 @@ class HomePage extends StatelessWidget {
                     color: Colors.white,
                     size: 40,
                   ),
-                ) ,
+                ),
                 title: Text(
                   'Medical Assistant',
                   style: TextStyle(
@@ -36,45 +34,47 @@ class HomePage extends StatelessWidget {
                 ),
               ),
             ),
-
-            SizedBox(height: 50.0,),
-            Container(
+            SizedBox(
+              height: 50.0,
             ),
+            Container(),
             Container(
               decoration: BoxDecoration(
                 color: Colors.green.shade600,
                 borderRadius: BorderRadius.circular(30.0),
               ),
               alignment: Alignment.center,
-              child: FlatButton(
+              child: TextButton(
                 onPressed: () {
                   Navigator.pushNamed(context, LoginPage.id);
                 },
                 child: Text(
-                    'Log in',
-                    style: TextStyle(
+                  'Log in',
+                  style: TextStyle(
                     color: Colors.white,
                     fontSize: 15.0,
                     letterSpacing: 2,
-                      fontWeight: FontWeight.bold,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
               ),
               width: 350.0,
             ),
-            SizedBox(height: 20.0,),
+            SizedBox(
+              height: 20.0,
+            ),
             Container(
               decoration: BoxDecoration(
                 color: Colors.orange.shade600,
                 borderRadius: BorderRadius.circular(30.0),
               ),
               alignment: Alignment.center,
-              child: FlatButton(
+              child: TextButton(
                 onPressed: () {
                   Navigator.pushNamed(context, RegistrationScreen.id);
                 },
                 child: Text(
-                    'Register',
+                  'Register',
                   style: TextStyle(
                     color: Colors.white,
                     letterSpacing: 2,

@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:insparkproject/bharat.dart';
-import 'package:insparkproject/first_aid.dart';
-import 'package:insparkproject/perinfo.dart';
-import 'package:insparkproject/remainder_page.dart';
-import 'package:insparkproject/storedocs.dart';
-
+import 'package:mymedicalassistant/bharat.dart';
+import 'package:mymedicalassistant/first_aid.dart';
+import 'package:mymedicalassistant/perinfo.dart';
+import 'package:mymedicalassistant/remainder_page.dart';
+import 'package:mymedicalassistant/storedocs.dart';
 
 class HomeScreen extends StatelessWidget {
-
   static const String id = 'homescreen';
 
   @override
@@ -39,7 +37,7 @@ class HomeScreen extends StatelessWidget {
                   Row(
                     children: <Widget>[
                       Container(
-                        margin: EdgeInsets.only(top: 20.0,left: 10.0),
+                        margin: EdgeInsets.only(top: 20.0, left: 10.0),
                         child: Text(
                           'MEDICAL ASSISTANT',
                           style: TextStyle(
@@ -179,9 +177,10 @@ class HomeScreen extends StatelessWidget {
                                 ),
                                 Container(
                                   child: Expanded(
-                                    child: FlatButton(
+                                    child: TextButton(
                                       onPressed: () {
-                                        Navigator.pushNamed(context, PerInfo.id);
+                                        Navigator.pushNamed(
+                                            context, PerInfo.id);
                                       },
                                       child: Icon(
                                         Icons.account_circle,
@@ -214,9 +213,10 @@ class HomeScreen extends StatelessWidget {
                                 ),
                                 Container(
                                   child: Expanded(
-                                    child: FlatButton(
+                                    child: TextButton(
                                       onPressed: () {
-                                        Navigator.pushNamed(context, FirstAid.id);
+                                        Navigator.pushNamed(
+                                            context, FirstAid.id);
                                       },
                                       child: Icon(
                                         Icons.accessibility,
@@ -228,7 +228,6 @@ class HomeScreen extends StatelessWidget {
                                 ),
                               ],
                             ),
-
                           ),
                         ],
                       ),
@@ -254,9 +253,10 @@ class HomeScreen extends StatelessWidget {
                                 ),
                                 Container(
                                   child: Expanded(
-                                    child: FlatButton(
+                                    child: TextButton(
                                       onPressed: () {
-                                        Navigator.pushNamed(context, RemainderPage.id);
+                                        Navigator.pushNamed(
+                                            context, RemainderPage.id);
                                       },
                                       child: Icon(
                                         Icons.hotel,
@@ -289,9 +289,10 @@ class HomeScreen extends StatelessWidget {
                                 ),
                                 Container(
                                   child: Expanded(
-                                    child: FlatButton(
+                                    child: TextButton(
                                       onPressed: () {
-                                        Navigator.pushNamed(context,SingleImageUpload.id);
+                                        Navigator.pushNamed(
+                                            context, SingleImageUpload.id);
                                       },
                                       child: Icon(
                                         Icons.assignment,

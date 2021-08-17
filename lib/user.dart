@@ -3,7 +3,7 @@ class User {
   String age;
   String gender;
   String phoneno;
-  String Bloodtype;
+  String bloodtype;
   String weight;
   String height;
   String medicalinfo;
@@ -15,19 +15,19 @@ class User {
         age = json['age'],
         gender = json['gender'],
         phoneno = json['Phone-number'],
-        Bloodtype = json['Blood-Type'],
+        bloodtype = json['Blood-Type'],
         weight = json['weight'],
         height = json['height'],
         medicalinfo = json['Medical-info'];
 
   Map<String, dynamic> toJson() => {
-    'name': name,
-    'age': age,
-    'gender': gender,
-    'phone-number': phoneno,
-    'Blood-Type': Bloodtype,
-    'weight': weight,
-    'height': height,
-    'medical-info': medicalinfo,
-  };
+        'name': name,
+        'age': age,
+        'gender': gender,
+        'phone-number': phoneno,
+        'Blood-Type': bloodtype,
+        'weight': weight,
+        'height': height,
+        'medical-info': medicalinfo,
+      };
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:insparkproject/homescreen.dart';
+//import 'package:firebase_auth/firebase_auth.dart';
+import 'homescreen.dart';
 
 class RegistrationScreen extends StatefulWidget {
   static const id = 'registration_screen';
@@ -9,8 +9,7 @@ class RegistrationScreen extends StatefulWidget {
 }
 
 class _RegistrationScreenState extends State<RegistrationScreen> {
-
-  final _auth = FirebaseAuth.instance;
+  //final _auth = FirebaseAuth.instance;
   String email;
   String password;
 
@@ -43,7 +42,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
               decoration: InputDecoration(
                 hintText: 'Enter your email',
                 contentPadding:
-                EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+                    EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.all(Radius.circular(32.0)),
                 ),
@@ -64,12 +63,12 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
               textAlign: TextAlign.center,
               obscureText: true,
               onChanged: (value) {
-               password = value;
+                password = value;
               },
               decoration: InputDecoration(
                 hintText: 'Enter your password',
                 contentPadding:
-                EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+                    EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.all(Radius.circular(32.0)),
                 ),
@@ -93,8 +92,8 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 borderRadius: BorderRadius.all(Radius.circular(30.0)),
                 elevation: 5.0,
                 child: MaterialButton(
-                  onPressed: () async{
-                  Navigator.pushNamed(context, HomeScreen.id);
+                  onPressed: () async {
+                    Navigator.pushNamed(context, HomeScreen.id);
                   },
                   minWidth: 200.0,
                   height: 42.0,

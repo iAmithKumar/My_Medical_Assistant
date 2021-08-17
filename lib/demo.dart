@@ -17,14 +17,14 @@ class DemoView extends State<Demo> {
   loadSharedPrefs() async {
     try {
       User user = User.fromJson(await sharedPref.read("user"));
-      Scaffold.of(context).showSnackBar(SnackBar(
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
           content: new Text("Loaded!"),
           duration: const Duration(milliseconds: 500)));
       setState(() {
         userLoad = user;
       });
     } catch (Excepetion) {
-      Scaffold.of(context).showSnackBar(SnackBar(
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
           content: new Text("Nothing found!"),
           duration: const Duration(milliseconds: 500)));
     }
@@ -94,7 +94,7 @@ class DemoView extends State<Demo> {
                     decoration: InputDecoration(hintText: "Blood-Type"),
                     onChanged: (value) {
                       setState(() {
-                        userSave.Bloodtype = value;
+                        userSave.bloodtype = value;
                       });
                     },
                   )),
@@ -139,35 +139,31 @@ class DemoView extends State<Demo> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
-              RaisedButton(
+              ElevatedButton(
                 onPressed: () {
                   sharedPref.save("user", userSave);
-                  Scaffold.of(context).showSnackBar(SnackBar(
+                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                       content: new Text("Saved!"),
                       duration: const Duration(milliseconds: 500)));
                 },
-                color: Colors.teal,
-                child:
-                Text('Save', style: TextStyle(fontSize: 20)),
+                child: Text('Save', style: TextStyle(fontSize: 20)),
               ),
-              RaisedButton(
+              ElevatedButton(
                 onPressed: () {
                   loadSharedPrefs();
                 },
-                color: Colors.teal,
                 child: Text('Load', style: TextStyle(fontSize: 20)),
               ),
-              RaisedButton(
+              ElevatedButton(
                 onPressed: () {
                   sharedPref.remove("user");
-                  Scaffold.of(context).showSnackBar(SnackBar(
+                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                       content: new Text("Cleared!"),
                       duration: const Duration(milliseconds: 500)));
                   setState(() {
                     userLoad = User();
                   });
                 },
-                color: Colors.teal,
                 child: Text('Clear', style: TextStyle(fontSize: 20)),
               ),
             ],
@@ -179,21 +175,19 @@ class DemoView extends State<Demo> {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
-              Text("Name: " + (userLoad.name ?? ""),
+              Text("Name: " + (userLoad.name), style: TextStyle(fontSize: 16)),
+              Text("Age: " + (userLoad.age), style: TextStyle(fontSize: 16)),
+              Text("Gender: " + (userLoad.gender),
                   style: TextStyle(fontSize: 16)),
-              Text("Age: " + (userLoad.age ?? ""),
+              Text("Phone-number: " + (userLoad.phoneno),
                   style: TextStyle(fontSize: 16)),
-              Text("Gender: " + (userLoad.gender ?? ""),
+              Text("Blood-type: " + (userLoad.bloodtype),
                   style: TextStyle(fontSize: 16)),
-              Text("Phone-number: " + (userLoad.phoneno ?? ""),
+              Text("Weight: " + (userLoad.weight),
                   style: TextStyle(fontSize: 16)),
-              Text("Blood-type: " + (userLoad.Bloodtype ?? ""),
+              Text("Height: " + (userLoad.height),
                   style: TextStyle(fontSize: 16)),
-              Text("Weight: " + (userLoad.weight ?? ""),
-                  style: TextStyle(fontSize: 16)),
-              Text("Height: " + (userLoad.height ?? ""),
-                  style: TextStyle(fontSize: 16)),
-              Text("Medical-info: " + (userLoad.medicalinfo ?? ""),
+              Text("Medical-info: " + (userLoad.medicalinfo),
                   style: TextStyle(fontSize: 16)),
             ],
           ),

@@ -1,4 +1,4 @@
-name: insparkproject
+name: mymedicalassistant
 description: A new Flutter application.
 
 # The following defines the version and build number for your application.
@@ -22,9 +22,9 @@ dependencies:
 
   shared_preferences: any
   cupertino_icons: ^0.1.2
-  firebase_core: ^0.4.4+3
-  firebase_auth: ^0.16.0
-  cloud_firestore: ^0.13.5
+  #firebase_core: ^0.4.5
+  #firebase_auth: ^0.16.1
+  #cloud_firestore: ^0.13.7
   image_picker: ^0.6.5
   font_awesome_flutter: ^8.4.0
   intl: ^0.16.1
